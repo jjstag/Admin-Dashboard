@@ -170,5 +170,25 @@ img {
   background-color: #fefcff;
   grid-area: 2 / 2 / -1 / -1;
   display: grid;
-  
+}
+
+#projects-container * {
+  text-wrap: wrap;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 5px;
+}
+
+.project {
+  border: 3px solid lightgray;
+  border-radius: 15px;
+}
+
+.project-text {
+  font-size: 12px;
 }
