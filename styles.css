@@ -170,6 +170,11 @@ img {
   background-color: #fefcff;
   grid-area: 2 / 2 / -1 / -1;
   display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+}
+
+#projects-container {
+  grid-area: 1 / 1 / 3 / 2;
 }
 
 #projects-container * {
@@ -191,4 +196,12 @@ img {
 
 .project-text {
   font-size: 12px;
+}
+
+#announcements-container {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#trending-container {
+  grid-area: 2 / 2 / 3 / 3;
 }
