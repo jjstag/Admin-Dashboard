@@ -182,19 +182,28 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
-  margin: 5px;
+  gap: 15px;
+  margin: 10px;
 }
 
 .project {
   background-color: #fefcff;
-  border-left: 10px solid orange;
-  border-radius: 10px;
+  border-left: 7px solid orange;
+  border-radius: 7px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-buttons {
+  align-self: flex-end;
+  margin-right: 15px;
 }
 
 .project-text {
   font-size: 12px;
+  margin: 10px 0;
 }
 
 #announcements-container {
