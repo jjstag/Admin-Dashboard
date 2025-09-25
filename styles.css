@@ -190,7 +190,7 @@ img {
   background-color: #fefcff;
   border-left: 7px solid orange;
   border-radius: 7px;
-  padding: 5px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -200,7 +200,6 @@ img {
   align-self: flex-end;
   margin-right: 15px;
 }
-
 .project-text {
   font-size: 12px;
   margin: 10px 0;
@@ -209,6 +208,23 @@ img {
 #announcements-container {
   grid-area: 1 / 2 / 2 / 3;
 }
+
+#announcements {
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fefcff;
+}
+
+#announcements div:nth-child(1), #announcements div:nth-child(2) {
+  border-bottom: 1px solid lightgrey;
+}
+
+.announcement-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .announcement-text {
   font-size: 12px;
 }
