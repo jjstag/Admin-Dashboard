@@ -168,6 +168,7 @@ img {
   grid-area: 2 / 2 / -1 / -1;
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
+  align-items: start;
 }
 
 #body * {
@@ -176,14 +177,18 @@ img {
 
 #projects-container {
   grid-area: 1 / 1 / 3 / 2;
+  height: 70dvh;
 }
 
 #projects {
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: 1fr;
   gap: 15px;
   margin: 10px;
+  
 }
 
 .project {
@@ -217,7 +222,12 @@ img {
 }
 
 #announcements div:nth-child(1), #announcements div:nth-child(2) {
+  padding-bottom: 5px;
   border-bottom: 1px solid lightgrey;
+}
+
+#announcements div:nth-child(2), #announcements div:nth-child(3) {
+  padding-top: 5px;
 }
 
 .announcement-name {
@@ -231,4 +241,22 @@ img {
 
 #trending-container {
   grid-area: 2 / 2 / 3 / 3;
+  align-self: stretch;
+}
+
+#trending {
+  height: 220px;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fefcff;
+  /* align-self: stretch; */
+}
+
+.trending-person {
+  display: flex;
+}
+
+.trending-person img {
+  width: 30px;
 }
