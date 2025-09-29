@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* RESET */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -53,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
   height: 100dvh;
-  font-family: Arial, Helvetica, sans-serif, system-ui;
+  font-family: Roboto, Arial, Helvetica, sans-serif, system-ui;
   /* min-width: 630px; */
 }
 
@@ -84,12 +86,20 @@ p {
   font-size: 1.2em;
 }
 
+.dashboard-section:first-child svg {
+  width: 25px;
+}
+
+.dashboard-section:first-child .dashboard-item {
+  gap: 0;
+}
+
 .dashboard-item {
   display: flex;
   gap: 5px;
 }
 
-img {
+img, svg {
   width: 20px;
 }
 
@@ -129,7 +139,7 @@ img {
   justify-content: end;
 }
 
-#header-top img {
+#header-top img, #header-top svg {
   justify-self: center;
 }
 
@@ -149,12 +159,13 @@ img {
 #profile-greeting {
   display: grid;
   grid: 30px 30px / 85px 255px;
+  margin-left: 15px;
 }
 
-#profile-greeting img {
+#profile-greeting img, #profile-greeting svg {
   grid-area: 1 / 1 / 3 / 2;
-  height: 100%;
-  width: 100%;
+  height: 75px;
+  width: 75px;
 }
 
 #profile-greeting p:first-of-type {
@@ -262,6 +273,8 @@ img {
   display: flex;
 }
 
-.trending-person img {
-  width: 30px;
+.trending-person img, .trending-person svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
